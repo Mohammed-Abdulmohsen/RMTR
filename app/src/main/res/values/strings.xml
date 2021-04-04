@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Train Live</string>
+    <string name="your_mobile">Your Mobile</string>
+    <string name="your_password">Your Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="update">Update</string>
+    <string name="update_hint">Your account updated.</string>
+    <string name="update_hint2">update your account...</string>
+    <string name="login_hint1">Enter mobile and password to sign in.</string>
+    <string name="your_name">Your Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="your_e_mail">Your E-Mail</string>
+    <string name="signup_hint1">Write your name, password and mobile.</string>
+    <string name="signup_hint2">Both your password and confirm not equal.</string>
+    <string name="login">Moments please, login to the system.</string>
+    <string name="information">Information</string>
+    <string name="wrong_login">Wrong Mobile number or password.</string>
+    <string name="register_hint">You data is being recorded.</string>
+    <string name="register_hint2">Your data has been added to the system.</string>
+
+    <string name="change_default">You must change account setting.</string>
+    <string name="exit">Exit</string>
+    <string name="add_train">Add Train</string>
+    <string name="add_station">Add Station</string>
+    <string name="account">Account</string>
+    <string name="tickets">Tickets</string>
+    <string name="station_add">Station Add Successfully</string>
+    <string name="station_not_add">Station not added</string>
+    <string name="no_city">No City determined.</string>
+    <string name="reservation">Reservation</string>
+
+    <string-array name="stations">
+        <item>Choose Station</item>
+        <item>Al Majma\'ah</item>
+        <item>Al Qurayyat</item>
+        <item>Buraydah</item>
+        <item>Dumah Al Jandal</item>
+        <item>Riyadh</item>
+        <item>Taif</item>
+    </string-array>
+
+
+</resources>

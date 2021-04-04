@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">القطار</string>
+    <string name="sign_in">دخول</string>
+    <string name="sign_up">تسجيل</string>
+    <string name="update">تحديث</string>
+    <string name="update_hint">تم تحديث حسابك.</string>
+    <string name="update_hint2">تحديث بيانات حسابك...</string>
+    <string name="your_mobile">جوالك</string>
+    <string name="your_password">كلمة السر</string>
+    <string name="login_hint1">أكتب الجوال وكلمة السر للدخول.</string>
+    <string name="your_name">أسمك</string>
+    <string name="confirm_password">التحقق من كلمة السر</string>
+    <string name="your_e_mail">بريدك الإلكتروني</string>
+    <string name="signup_hint1">أكتب اسمك، كلمة السر و جوالك.</string>
+    <string name="signup_hint2">كلمة السر والتحقق منها غير متطابقتين.</string>
+    <string name="login">من فضلك لحظات، يتم الدخول الان للنظام.</string>
+    <string name="information">معلومة</string>
+    <string name="wrong_login">رقم جوالك غير صحيح او كلمة السر.</string>
+    <string name="register_hint">جاري تسجيل بياناتك.</string>
+    <string name="register_hint2">تم إضافة بياناتك للنظام</string>
+    <string name="change_default">يجب ان تقوم بتغيير إعدادات الحساب الخاص بك.</string>
+    <string name="exit">خروج</string>
+    <string name="add_train">إضافة قطار</string>
+    <string name="add_station">إضافة محطة</string>
+    <string name="account">حسابك</string>
+    <string name="tickets">التذاكر</string>
+    <string name="station_add">تم إضافة المحطة</string>
+    <string name="station_not_add">لم يتم إضافة المحطة</string>
+    <string name="no_city">لم يتم تحديد مدينة</string>
+    <string name="reservation">حجز</string>
+
+    <string-array name="stations">
+        <item>أختار محطة</item>
+        <item>المجمعة</item>
+        <item>القريات</item>
+        <item>بريدة</item>
+        <item>دومة الجندل</item>
+        <item>الرياض</item>
+        <item>الطائف</item>
+    </string-array>
+</resources>

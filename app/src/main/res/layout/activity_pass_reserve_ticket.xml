@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        tools:context=".PassReserveTicketActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="?attr/homeAsUpIndicator" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Back"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <RadioGroup
+                android:id="@+id/rg__trip_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="One Way"
+                    android:textColor="@color/colorAccent" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="RoundTrip"
+                    android:textColor="@color/colorAccent" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rg_train_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day"
+                    android:textColor="@color/colorAccent" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_night"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Night"
+                    android:textColor="@color/colorAccent" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/textView_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Leaving From"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/textView_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Going To"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_from"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/textView_dep_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Depart Date"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <DatePicker
+
+                    android:id="@+id/dp_dep"
+                    style="@android:style/Widget.DatePicker"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:endYear="2020"
+                    android:startYear="2020" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_to"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/textView_arr_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Return Date"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <DatePicker
+
+                    android:id="@+id/dp_return"
+                    style="@android:style/Widget.DatePicker"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:endYear="2020"
+                    android:startYear="2020" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_class_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Business"
+                    android:textColor="@color/colorAccent" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_eco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Economy"
+                    android:textColor="@color/colorAccent" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/ll_pass_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Adult"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_adu"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textColor="@color/colorButton1"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Childern"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_chi"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textColor="@color/colorButton1"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Infant"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_inf"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textColor="@color/colorButton1"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorButton1"
+            android:text="@string/reservation"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            app:layout_constraintVertical_bias="0.90999997" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
